@@ -1,0 +1,5 @@
+---
+- hosts: appservers
+  become: yes
+  roles:
+  - {role: installtomcat, when: ansible_os_family =="Debian"}

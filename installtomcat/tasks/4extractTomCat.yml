@@ -8,6 +8,6 @@
 
 - name: extract tar file
   command: 
-   cmd: sudo tar xzvf /home/maha/apache-tomcat-8.5.47.tar.gz -C /opt/tomcat --strip-components=1
-   creates: /opt/tomcat/GM
+   cmd: sudo tar xzvf /home/gowtham/apache-tomcat-8.5.49.tar.gz -C /opt/tomcat --strip-components=1
+   creates: /opt/tomcat/LICENCE
 
