@@ -1,0 +1,9 @@
+
+# http://mirrors.estointernet.in/apache/tomcat/tomcat-8/v8.5.49/bin/apache-tomcat-8.5.49.tar.gz
+
+- name: Download tomcat tar file
+  get_url:
+   url: http://mirrors.estointernet.in/apache/tomcat/tomcat-8/v8.5.49/bin/apache-tomcat-8.5.49.tar.gz
+   dest: /home/gowtham/apache-tomcat-8.5.49.tar.gz
+   force_basic_auth: yes
+  

@@ -1,0 +1,26 @@
+---
+
+- hosts: webservers
+  become: yes
+  tasks: 
+  - name: install tree 
+    apt: 
+     name: apache2
+     state: present
+    notify: 
+    - uninstallapache2
+    when: ansible_os_family =="Debian"
+
+  - name: install tree on redhat
+    yum:
+     name: httpd
+     state: present
+    notify: restarthttpd
+    when: ansible_os_family =="RedHat"
+
+  handlers:
+  - name: uninstallapache2
+    copy:
+     src: index.html
+     dest: /var/www/html/index.html
+    when: ansible_os_family =="Debiam"

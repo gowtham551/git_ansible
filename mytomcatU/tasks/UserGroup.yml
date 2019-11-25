@@ -1,0 +1,15 @@
+# sudo groupadd tomcat
+# sudo useradd -s /bin/false -g tomcat -d /opt/tomcat tomcat
+
+- name: create group
+  group:
+   name: tomcat
+   state: present
+
+- name: create user
+  user:
+   name: tomcat
+   comment: this is tomcat user
+   group: tomcat
+   shell: /bin/false
+   home: /opt/tomcat
