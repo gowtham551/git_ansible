@@ -1,2 +1,10 @@
 ---
 # tasks file for installtomcat
+# 2createUG(U=USER,G=GROUP)
+- include_tasks: 1installjava.yml
+- include_tasks: 2createUG.yml
+- include_tasks: 3downloadTomCat.yml
+- include_tasks: 4extractTomCat.yml
+- include_tasks: 5Permissions.yml
+- include_tasks: 6tomconfigfile.yml
+- include_tasks: 7tomstart.yml

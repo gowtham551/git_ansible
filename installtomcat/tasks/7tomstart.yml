@@ -1,0 +1,14 @@
+# sudo systemctl daemon-reload
+# sudo systemctl start tomcat
+
+---
+- name: daemon-reload
+  systemd:
+   name: tomcat
+   daemon_reload: yes
+
+- name: start tomcat
+  systemd:
+   state: started
+   name: tomcat
+
