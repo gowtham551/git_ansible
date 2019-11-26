@@ -4,3 +4,8 @@
    url: https://maha8899.s3.amazonaws.com/mahaLogin.war
    dest: /opt/tomcat/webapps/mahaLogin.war
    force_basic_auth: yes
+
+- name: tom restart
+  systemd:
+   state: restarted
+   name: tomcat

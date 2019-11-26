@@ -18,4 +18,9 @@
    src: templates/hostmanagerapp.j2
    dest: /opt/tomcat/webapps/host-manager/META-INF/context.xml
 
+- name: tom restart
+  systemd:
+   state: restarted
+   name: tomcat
+
 
