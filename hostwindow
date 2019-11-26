@@ -1,0 +1,10 @@
+
+[win]
+172.31.19.67
+
+[win:vars]
+ansible_user=Administrator
+ansible_password=yM)=e&**J6
+ansible_connection=winrm
+ansible_winrm_server_cert_validation=ignore
+

@@ -1,0 +1,21 @@
+# sudo nano /opt/tomcat/conf/tomcat-users.xml
+# sudo nano /opt/tomcat/webapps/manager/META-INF/context.xml
+# sudo nano /opt/tomcat/webapps/host-manager/META-INF/context.xml
+
+---
+- name: tomcat user context
+  template:
+   src: templates/tomcatuser.j2
+   dest: /opt/tomcat/conf/tomcat-users.xml
+
+- name: tomcat manager context
+  template:
+   src: templates/managerapp.j2
+   dest: /opt/tomcat/webapps/manager/META-INF/context.xml
+
+- name: tomcat hostmanager context
+  template:
+   src: templates/hostmanagerapp.j2
+   dest: /opt/tomcat/webapps/host-manager/META-INF/context.xml
+
+
