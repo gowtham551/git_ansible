@@ -8,7 +8,7 @@
 - include_tasks: 5Permissions.yml
 - include_tasks: 6tomconfigfile.yml
 - include_tasks: 7tomstart.yml
-- include_tasks: 8tomuserconfig.yml
-- include_tasks: 9tomrestart.yml
-- include_tasks: 10deployjava.yml
-- include_tasks: 9tomrestart.yml
+#- include_tasks: 8tomuserconfig.yml
+#- include_tasks: 9tomrestart.yml
+#- include_tasks: 10deployjava.yml
+#- include_tasks: 9tomrestart.yml
