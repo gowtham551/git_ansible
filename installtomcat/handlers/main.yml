@@ -1,2 +1,12 @@
 ---
 # handlers file for installtomcat
+
+- name: tom start
+  systemd:
+   state: started
+   name: tomcat
+
+- name: tom restart
+  systemd:
+   state: restarted
+   name: tomcat
