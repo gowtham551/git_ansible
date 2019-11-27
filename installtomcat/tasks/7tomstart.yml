@@ -6,9 +6,5 @@
   systemd:
    name: tomcat
    daemon_reload: yes
-
-- name: start tomcat
-  systemd:
-   state: started
-   name: tomcat
+  notify: tom start
 
