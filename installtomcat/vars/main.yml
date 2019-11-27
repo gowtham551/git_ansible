@@ -1,2 +1,4 @@
 ---
 # vars file for installtomcat
+
+java: default-jdk
