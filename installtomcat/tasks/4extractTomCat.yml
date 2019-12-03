@@ -11,3 +11,15 @@
    cmd: sudo tar xzvf /home/gowtham/apache-tomcat-8.5.49.tar.gz -C /opt/tomcat --strip-components=1
    creates: /opt/tomcat/LICENCE
 
+- name: Ansible check file exists.
+  stat:
+   path: /opt/tomcat/LICENSE
+  register: p
+- name: If file exists
+  debug:
+   msg: "File exists..."
+  when: p.stat.exists
+- name: checking
+  debug:
+   msg: "File not found"
+  when: p.stat.exists == False
