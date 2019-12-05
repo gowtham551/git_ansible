@@ -49,13 +49,13 @@ vi .boto
  
 8) write playbook for create ansible hosts in AWS as ansible user
    
-     $ create playbook by using ec2 module as below
-     $ check /Dynamic/createinstance.yml
+   # $ create playbook by using ec2 module as below
+   # $ check /Dynamic/createinstance.yml
      
 9) Execute Playbook on localhost as ansible user
 
-     $ vi myhosts
-     $ localhost
+  $ vi myhosts
+  $  $ localhost
  :wq!
 
  ### ansible-playbook -i myhosts <playbookname.yml>
