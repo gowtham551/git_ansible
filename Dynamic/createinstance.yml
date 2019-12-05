@@ -1,4 +1,6 @@
 # ansible-playbook -i myhosts <playbookname.yml>
+# ansible tag_Name_Dynamic -i ec2.py -u gowtham -m ping
+# anible-playbook -i ec2.py -u gowtham  <playbookname>.yml
 ---
 - hosts: localhost
   become: yes
