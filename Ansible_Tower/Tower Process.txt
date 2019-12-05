@@ -17,11 +17,11 @@ use below link for getting instance
  # adduser gowtham
  # passwd gowtham
  # visudo
-   gowtham ALL=(ALL) NOPASSWD: ALL
+   # gowtham ALL=(ALL) NOPASSWD: ALL
    :wq!
  # vi /etc/ssh/sshd_config
-   PasswordAuthentication yes
-   :wq!
+   # PasswordAuthentication yes
+   # :wq!
  # service ssh restart
 
 5-move to user and genrate key for password less authentication
