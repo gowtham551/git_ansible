@@ -26,17 +26,25 @@ use below link for getting instance
 
 5-move to user and genrate key for password less authentication
  # su - gowtham
- # $ ssh-keygen
- # $ ssh-copy-id <node private ip>
+
+ $ ssh-keygen
+ 
+ $ ssh-copy-id <node private ip>
  
 # STAGE3 #
 1-Take public ip and paste it in new webpage
+
 2-give the credentials
  # Username: admin
  # Password: NgfkNCHU7Pzp
 3-upload licence and login into tower webpage
+
 4-Follow below process
+
  i)   create project 
+
  ii)  create credentials with your(UID and PASSWD)
+
  iii) create inventory(Give Groups and HOST)
+
  iv)  create template and execute it
