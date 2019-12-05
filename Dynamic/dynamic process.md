@@ -43,10 +43,13 @@ vi .boto
 
 ### Stage3 Configure SSH ###
 1) we should logging into any node using ssh-keygen
+  
    $ ssh-keygen
 
 2) copy key id into ansible nodes
+
    $ ssh-copy-id localhost
+
    $ ssh-copy-id <private ip of node>
 
 ### Start process for creating Dynamic inventory ###
@@ -58,7 +61,9 @@ vi .boto
 2) Execute Playbook on localhost as ansible user
 
   $ vi myhost
+
   $ localhost
+
  :wq!
 
 # ansible-playbook -i myhosts <playbookname.yml>
@@ -78,7 +83,7 @@ vi .boto
 # ansible tag_Name_AnsibleNode -i ec2.py -u gowtham -m ping
 
 5) create playbook (check webserver.yml)
-#  anible-playbook -i ec2.py -u gowtham  <playbookname>.yml
+#  anible-playbook -i ec2.py -u gowtham  webserver.yml
 
 
 
