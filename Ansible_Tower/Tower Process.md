@@ -26,8 +26,8 @@ use below link for getting instance
 
 5-move to user and genrate key for password less authentication
  # su - gowtham
- $ ssh-keygen
- $ ssh-copy-id <node private ip>
+ # $ ssh-keygen
+ # $ ssh-copy-id <node private ip>
  
 # STAGE3 #
 1-Take public ip and paste it in new webpage
