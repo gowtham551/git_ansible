@@ -29,28 +29,12 @@
    #  pip intall boto
 4) Configure IAM user in ansible master as root user
    vi .boto
-       [Credentials]
-       aws_access_key_id = foo
-       aws_secret_access_key = bar
+       #[Credentials]
+       #aws_access_key_id = foo
+       #aws_secret_access_key = bar
    :wq!
  5) write playbook for create ansible hosts in AWS as ansible user
    
      $ create playbook by using ec2 module as below
----
-- hosts: localhost
-  become: yes
-  tasks:
-  - name: create ec2 instances
-    ec2:
-     key_name: tower
-     group: default
-     instance_type: t2.micro
-     image: ami-0dd723956a0ef04a6
-     region: us-east-1
-     wait: yes
-     count: 1
-     instance_tags:
-       Name: Dynamic
-     vpc_subnet_id: subnet-a5abe48b
-     assign_public_ip: yes
-     
+
+
