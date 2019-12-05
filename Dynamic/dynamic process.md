@@ -9,7 +9,7 @@
 2) create user (gowtham)
   # adduser gowtham
 
-3) we make maha user as a sudo user
+3) we make gowtham user as a sudo user
   #  visudo
      gowtham ALL=(ALL) NOPASSWD: ALL
      :wq!
@@ -21,7 +21,7 @@
   # service ssh restart
 
 ### STAGE2 ###
-1) Create IAM user 
+1) Create IAM user(give - accessADMIN permission) 
 2) Create AMI with ansible node
 3) install pip on ansible master as root user
 
@@ -35,13 +35,13 @@ vi .boto
    #  aws_secret_access_key = bar
    :wq!
 
-5) vi .boto credentials put it in user as well
-   $  [Credentials]
-   $  aws_access_key_id = foo
-   $  aws_secret_access_key = bar
+5) vi .boto credentials put it in user(gowtham) as well
+   # $  [Credentials]
+   # $  aws_access_key_id = foo
+   # $  aws_secret_access_key = bar
    :wq!
 
-6) with out, we should logging into into any node
+6) we should logging into into any node using ssh-keygen
    $ ssh-keygen
 
 7) copy key id into ansible nodes
