@@ -20,7 +20,7 @@
    :wq!
   # service ssh restart
 
-### STAGE2 ###
+### STAGE2 create IAM user and install pip###
 1) Create IAM user(give - accessADMIN permission) 
 2) Create AMI with ansible node
 3) install pip on ansible master as root user
@@ -41,28 +41,31 @@ vi .boto
    # $  aws_secret_access_key = bar
    :wq!
 
-6) we should logging into into any node using ssh-keygen
+### Stage3 Configure SSH ###
+1) we should logging into any node using ssh-keygen
    $ ssh-keygen
 
-7) copy key id into ansible nodes
+2) copy key id into ansible nodes
+   $ ssh-copy-id localhost
    $ ssh-copy-id <private ip of node>
- 
-8) write playbook for create ansible hosts in AWS as ansible user
+
+### Start process for creating Dynamic inventory ###
+1) write playbook for create ansible hosts in AWS as ansible user
    
    # $ create playbook by using ec2 module as below
    # $ check /Dynamic/createinstance.yml
      
-9) Execute Playbook on localhost as ansible user
+2) Execute Playbook on localhost as ansible user
 
-  $ vi myhosts
-  $  $ localhost
+  $ vi myhost
+  $ localhost
  :wq!
 
- ### ansible-playbook -i myhosts <playbookname.yml>
+# ansible-playbook -i myhosts <playbookname.yml>
 
-10) create ec2.py(Dynamic Inventory file) and ec2.ini( instructions file) as ansible user(maha)
+3) create ec2.py(Dynamic Inventory file) and ec2.ini( instructions file) as ansible user(gowtham)
 
-11) change permissions of ec2.py and ec2.ini file with 755 and set as a global vars
+4) change permissions of ec2.py and ec2.ini file with 755 and set as a global vars
    
   $ chmod 755 ec2.py ec2.ini
   
@@ -72,9 +75,10 @@ vi .boto
 
   $ ./ec2.py --list
 
-  $ ansible tag_Name_AnsibleNode -i ec2.py -u gowtham -m ping
+# ansible tag_Name_AnsibleNode -i ec2.py -u gowtham -m ping
 
-  $ anible-playbook -i ec2.py -u gowtham  <playbookname>.yml
+5) create playbook (check webserver.yml)
+#  anible-playbook -i ec2.py -u gowtham  <playbookname>.yml
 
 
 
