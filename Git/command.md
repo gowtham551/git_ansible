@@ -35,8 +35,10 @@
 
 
 -- commands--
-# git log (display commit id info)
-# git log --oneline (display commit-id with 1st 7 characterstics and all commit id info display in one line)
+---
+git log (display commit id info)
+git log --oneline (display commit-id with 1st 7 characterstics and all commit id info display in one line)
+---
 
 
 
