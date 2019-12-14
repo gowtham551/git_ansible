@@ -1,4 +1,4 @@
----create a new repository on the command line---
+# create a new repository on the command line
 
 ### echo "# practice" >> README.md
 ### git init
@@ -25,7 +25,7 @@
 ### git remote add origin https://github.com/gowtham551/practice.git
 ### git push -u origin master
 
----3 stages in Git---
+# 3 stages in Git
 
 ### i. workspace          (git status - display untracked files info and the file in red colour)
 ###    git add -A/./*    (move all files in workspace to staging/index area)
@@ -37,7 +37,7 @@
 ### iii. local repository   (git log)
 ###      git push -u origin branch name (move data from local to centralized repository)
 
----commands---
+# commands
 
 ### git log (display commit id info)
 ### git log --oneline (display commit-id with 1st 7 characterstics and all commit id info display in one line
@@ -57,6 +57,19 @@
 ### local repo --> staging or index area == git reset --soft cid(commit id)
 ### staging --> workspace == git reset head filename
 ### local repo --> workspace == git reset --mixed cid (backword data from local_repo to workspace)
+
+# git branches
+  Here by default branch name is "master"
+### git branch (showing git branches)
+### git branch branchname (creating a git branch)
+### git checkout branchname (changing from one branch to other branch)
+
+--- create a branch---
+
+### git branch gowtham (created branch name as gowtham)
+### git checkout gowtham (changing branch "master" to "gowtham")
+### git merge master (all files in master branch copied into gowtham branch)
+### git push -u origin gowtham (push data into github gowtham branch)
 
 
 
