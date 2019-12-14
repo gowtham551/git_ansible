@@ -27,15 +27,15 @@
 
 ---3 stages in Git---
 
-### workspace          (git status - display untracked files info and the file in red colour)
-### git add -A/./*    (move all files in workspace to staging/index area)
-### git add filename  (move particular file workspace to staging/index area)
-### git status
-### staging/index area (git status - display tracked files info and the file in green colour)
-### git commit -m "save name"(move data from staging/index area to local repository) --(-m=message)
-### git status  
-### local repository   (git log)
-### git push -u origin <branch name> (move data from local to centralized repository)
+### i. workspace          (git status - display untracked files info and the file in red colour)
+###    git add -A/./*    (move all files in workspace to staging/index area)
+###    git add filename  (move particular file workspace to staging/index area)
+###    git status
+### ii. staging/index area (git status - display tracked files info and the file in green colour)
+###     git commit -m "save name"(move data from staging/index area to local repository) --(-m=message)
+###     git status  
+### iii. local repository   (git log)
+###      git push -u origin <branch name> (move data from local to centralized repository)
 
 ---commands---
 
