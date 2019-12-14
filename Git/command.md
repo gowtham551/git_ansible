@@ -35,7 +35,7 @@
 ###     git commit -m "save name"(move data from staging/index area to local repository) --(-m=message)
 ###     git status  
 ### iii. local repository   (git log)
-###      git push -u origin <branch name> (move data from local to centralized repository)
+###      git push -u origin branch name (move data from local to centralized repository)
 
 ---commands---
 
