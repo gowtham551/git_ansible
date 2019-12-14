@@ -72,6 +72,9 @@
 ### git merge master (all files in master branch copied into gowtham branch)
 ### git push -u origin gowtham (push data into github gowtham branch)
 
+# git branch commands
+
+### git checkout -b branchname origin/branchname
 
 
 
