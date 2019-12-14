@@ -60,9 +60,10 @@
 
 # git branches
   Here by default branch name is "master"
-### git branch (showing git branches)
+### git branch (showing list of git branches available in repo)
 ### git branch branchname (creating a git branch)
 ### git checkout branchname (changing from one branch to other branch)
+### git checkout -b branchname (create branch instantly and move to that branch)
 
 --- create a branch---
 
