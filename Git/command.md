@@ -40,7 +40,11 @@
 ---commands---
 
 ### git log (display commit id info)
-### git log --oneline (display commit-id with 1st 7 characterstics and all commit id info display in one line)
+### git log --oneline (display commit-id with 1st 7 characterstics and all commit id info display in one line
+### git log -2 (display latest 2 commit id's)
+### git log --oneline -2 (latest 2 commit id's display in short format)
+### git log --author=name
+
 
 
 
