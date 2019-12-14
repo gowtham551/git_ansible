@@ -49,12 +49,14 @@
 
 ---forward the data from workspace to local repo---
 
-*** workspace --> staging or index area == git add .
-*** staging --> local repo == git commit -m "desc"
+### workspace --> staging or index area == git add .
+### staging --> local repo == git commit -m "desc"
 
 ---backword the data from localrepo to workspace---
-*** local repo --> staging or index area == git reset --soft cid(commit id)
-*** staging --> workspace == git reset head filename
+
+### local repo --> staging or index area == git reset --soft cid(commit id)
+### staging --> workspace == git reset head filename
+### local repo --> workspace == git reset --mixed cid (backword data from local_repo to workspace)
 
 
 
