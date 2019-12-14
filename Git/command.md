@@ -44,6 +44,17 @@
 ### git log -2 (display latest 2 commit id's)
 ### git log --oneline -2 (latest 2 commit id's display in short format)
 ### git log --author=name
+### git log --until=yyyy-mm-dd (it will display log's upto that date)
+### git log --oneline --decorate   
+
+---forward the data from workspace to local repo---
+
+*** workspace --> staging or index area == git add .
+*** staging --> local repo == git commit -m "desc"
+
+---backword the data from localrepo to workspace---
+*** local repo --> staging or index area == git reset --soft cid(commit id)
+*** staging --> workspace == git reset head filename
 
 
 
