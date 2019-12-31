@@ -66,6 +66,8 @@ vi .boto
 
  :wq!
 
+3) ssh-copy-id localhost
+
 # ansible-playbook -i myhosts <playbookname.yml>
 
 3) create ec2.py(Dynamic Inventory file) and ec2.ini( instructions file) as ansible user(gowtham)
